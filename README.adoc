@@ -1,0 +1,30 @@
+== libpython-playground
+
+- Create a special conda environment with `python3.6`
+
+```
+conda create -n libpython python=3.6
+```
+
+- Activate libpython env
+```
+conda activate libpython
+```
+
+- Deactivate libpython env
+
+```
+conda deactivate
+```
+
+- Export `libpython` env
+
+```
+conda env export > environment_libpython.yml
+```
+
+- Create `libpython` from environment file
+```
+conda env create -f environment_libpython.yml
+```
+
